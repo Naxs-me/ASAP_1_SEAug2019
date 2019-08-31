@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
+import Login from './Components/Login';
+import SignUp from './Components/SignUp';
 
 const routing = (
     <Router>
