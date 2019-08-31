@@ -1,22 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link , Switch } from "react-router-dom";
+import NavigationBar from './components/Navigation_Bar';
+import LoginPage from './components/Login';
+import SignUpPage from './components/SignUp';
 import './App.css';
-import Nav from './Components/Navigation_Bar';
-class App extends Component {
-  state = {users: []}
-
-  componentDidMount() {
-    fetch('/users')
-      .then(res => res.json())
-      .then(users => this.setState({ users }));
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Nav/>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <NavigationBar/>
+    </div>
+  );
 }
 
 export default App;
