@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Nav from './Components/Navigation_Bar';
 class App extends Component {
   state = {users: []}
 
@@ -13,10 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Users</h1>
-        {this.state.users.map(user =>
-          <div key={user.id}>{user.username}</div>
-        )}
+        <Nav/>
       </div>
     );
   }
