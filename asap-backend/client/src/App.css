@@ -7,7 +7,18 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.Login{
+  align-content: center;
+  align-self: auto;
+  background-color: rgb(0, 10, 10);
+  padding-top: 1%;
+  padding-bottom:1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 4%; 
+  margin-bottom: 2.5%;
+  width: 30%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -49,6 +60,25 @@
 .navbar Nav.Link {
   display:inline-block;
   width: 90%;   
+}
+.header{
+  font-size: 2em;
+  color:white;
+}
+.formBasic{
+  color: white;
+  font-size: 1.5em;
+}
+.formBasic1 input{
+  color: white;
+  font-size: 1em;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 5%;
+}
+#try{
+  color: white;
+  font-size: 1em;
 }
 
 
