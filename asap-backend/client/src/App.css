@@ -31,3 +31,24 @@
     transform: rotate(360deg);
   }
 }
+.logo {
+  width: 80%;
+  padding-right: 0em;
+  height: 2.3em;
+}
+.logoy {
+  width: 20%;
+  padding-right: 0em;
+  height: 2.3em;
+}
+.navbar{
+  background-color: black;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.navbar Nav.Link {
+  display:inline-block;
+  width: 90%;   
+}
+
+
