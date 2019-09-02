@@ -19,11 +19,11 @@ function Footer({ children }) {
     return (
         <div>
             <div style={style} className="footer">
-                <Link to="/">Home</Link>
-                <br/><Link to="/AboutUs">About Us</Link>
-                <br/><Link to="/ContactUs">Contact Us</Link>
-                <br/><Link to="/Login">Login</Link>
-                <br/><Link to="/SignUp">SignUp</Link>
+                <Link to="/" id="check">Home</Link>
+                <br/><Link to="/AboutUs" id="check">About Us</Link>
+                <br/><Link to="/ContactUs" id="check">Contact Us</Link>
+                <br/><Link to="/Login" id="check">Login</Link>
+                <br/><Link to="/SignUp" id="check">SignUp</Link>
                 <center>Version 1.0</center>
             </div>
         </div>

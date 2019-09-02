@@ -21,17 +21,17 @@ return(
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       
-    <div className = "navtext"><Nav.Link hover href="/">Home</Nav.Link></div>
-    <div className = "navtext"><Nav.Link href="/AboutUs">About Us</Nav.Link></div>
-    <div className = "navtext"><Nav.Link hover href="/ContactUs">Contact Us</Nav.Link></div>
-    <div className = "navtext"><Nav.Link hover href="#ViewStatus">View Status</Nav.Link></div>
-    <div className = "navtext"><Nav.Link hover href="#LodgeComplaint">Lodge Complaint</Nav.Link></div>
+    <div className = "navtext"><Link to="/" id="che">Home</Link></div>
+    <div className = "navtext"><Link to="/AboutUs" id="che">About Us</Link></div>
+    <div className = "navtext"><Link to="/ContactUs" id="che">Contact Us</Link></div>
+    <div className = "navtext"><Link to="#ViewStatus" id="che">View Status</Link></div>
+    <div className = "navtext"><Link to="#LodgeComplaint" id="che">Lodge Complaint</Link></div>
     </Nav>
     <ButtonGroup className="mr-2" aria-label="First group">
-      <Button variant="outline-light"><Link to="/SignUp">Sign up</Link></Button>
+      <Button variant="outline-light" id="chb"><Link to="/SignUp" id="ch">Sign up</Link></Button>
     </ButtonGroup>
     <ButtonGroup className="mr-2" aria-label="Second group">
-      <Button variant="outline-light"><Link to="/Login">Login</Link></Button>
+      <Button variant="outline-light" id="chb"><Link to="/Login" id="ch">Login</Link></Button>
     </ButtonGroup>
 
   </Navbar.Collapse>
