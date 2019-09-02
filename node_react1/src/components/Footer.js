@@ -1,5 +1,6 @@
 import React from 'react';
 import "../App.css";
+import {Link} from 'react-router-dom';
 
 var style = {
     backgroundColor: "black",
@@ -14,22 +15,15 @@ var style = {
     //padding:"3%"
 }
 
-var phantom = {
-  display: 'block',
-  padding: '20px',
-  height: '60px',
-  width: '100%',
-}
-
 function Footer({ children }) {
     return (
         <div>
             <div style={style} className="footer">
-                Home
-                <br/>About Us
+                <Link to="/">Home</Link>
+                <br/><Link to="/AboutUs">About Us</Link>
                 <br/>Contact Us
-                <br/>Login
-                <br/>SignUp
+                <br/><Link to="/Login">Login</Link>
+                <br/><Link to="/SignUp">SignUp</Link>
                 <center>Version 1.0</center>
             </div>
         </div>
