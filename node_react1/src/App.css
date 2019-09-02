@@ -8,6 +8,7 @@
   pointer-events: none;
 }
 .Login{
+  border-radius: 15px;
   align-content: center;
   align-self: auto;
   background-color: rgb(0, 10, 10);
@@ -52,6 +53,10 @@
   padding-right: 0em;
   height: 2.3em;
 }
+.navtext{
+  font-size:20px;
+  padding-left: 55px;
+}
 .navbar{
   background-color: black;
   font-size: 1.5em;
@@ -60,6 +65,9 @@
 .navbar Nav.Link {
   display:inline-block;
   width: 90%;   
+}
+.navtext Nav.Link:hover {
+  color: red;
 }
 .header{
   font-size: 2em;
@@ -85,4 +93,33 @@
   font-size: 1em;
 }
 
+.withtable
+{
+  color: red;
+  background-color: black;
+  border-radius:15px;
+  width: 80%;
+  height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: 1em;
+}
+.withtable::-webkit-scrollbar
+{
+ display: none;
+}
+.withtable table{
+  color: white;
+}
+.withtable table tr:hover{
+  color: red;
+} 
+.Tablediv
+{
+  border-radius: 15px;
+  margin-top: 5%;
+}
+.Actual
+{
+  color:red;
+}
 

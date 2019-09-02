@@ -21,16 +21,13 @@ var phantom = {
   width: '100%',
 }
 
-var alignright = {
-    textAlign: 'right'
-}
 function Footer({ children }) {
     return (
         <div>
             <div style={style} className="footer">
                 Home
                 <br/>About Us
-                <br/>Conatact Us
+                <br/>Contact Us
                 <br/>Login
                 <br/>SignUp
                 <center>Version 1.0</center>

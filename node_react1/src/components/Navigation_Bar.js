@@ -23,10 +23,11 @@ return(
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       
-    <div className = "navtext"><Nav.Link href="#home">Home</Nav.Link></div>
-    <div className = "navtext"><Nav.Link href="#link">About Us</Nav.Link></div>
-    <div className = "navtext"><Nav.Link href="#contact">Contact Us</Nav.Link></div>
-    <div className = "navtext"><Nav.Link href="#ViewStatus">View Status</Nav.Link></div>
+    <div className = "navtext"><Nav.Link hover href="#home">Home</Nav.Link></div>
+    <div className = "navtext"><Nav.Link hover href="#link">About Us</Nav.Link></div>
+    <div className = "navtext"><Nav.Link hover href="#contact">Contact Us</Nav.Link></div>
+    <div className = "navtext"><Nav.Link hover href="#ViewStatus">View Status</Nav.Link></div>
+    <div className = "navtext"><Nav.Link hover href="#LodgeComplaint">Lodge Complaint</Nav.Link></div>
     </Nav>
     {/* <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
