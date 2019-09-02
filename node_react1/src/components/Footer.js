@@ -21,7 +21,7 @@ function Footer({ children }) {
             <div style={style} className="footer">
                 <Link to="/">Home</Link>
                 <br/><Link to="/AboutUs">About Us</Link>
-                <br/>Contact Us
+                <br/><Link to="/ContactUs">Contact Us</Link>
                 <br/><Link to="/Login">Login</Link>
                 <br/><Link to="/SignUp">SignUp</Link>
                 <center>Version 1.0</center>

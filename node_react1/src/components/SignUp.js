@@ -2,8 +2,11 @@ import React from 'react';
 import { Form, Container } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import '../App.css';
+import Navigation from './Navigation_Bar';
 function SignUpPage() {
     return (
+        <div>
+            <Navigation/>
         <Container className="Login">
             <Form>
                 <p className="header">Sign Up</p>
@@ -45,6 +48,7 @@ function SignUpPage() {
   </Button>
             </Form>
         </Container>
+        </div>
     );
 }
 export default SignUpPage;

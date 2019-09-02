@@ -14,7 +14,7 @@ import '../App.css';
 function Navigation_bar(){
 return(
 <Navbar expand="lg" variant="dark" className="navbar">
-  <Navbar.Brand href="#homey"  className = "logoy"> 
+  <Navbar.Brand href="/"  className = "logoy"> 
         <Image src={logo} alt = "logo_p"  className = "logo"/>
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,7 +23,7 @@ return(
       
     <div className = "navtext"><Nav.Link hover href="/">Home</Nav.Link></div>
     <div className = "navtext"><Nav.Link href="/AboutUs">About Us</Nav.Link></div>
-    <div className = "navtext"><Nav.Link hover href="#contact">Contact Us</Nav.Link></div>
+    <div className = "navtext"><Nav.Link hover href="/ContactUs">Contact Us</Nav.Link></div>
     <div className = "navtext"><Nav.Link hover href="#ViewStatus">View Status</Nav.Link></div>
     <div className = "navtext"><Nav.Link hover href="#LodgeComplaint">Lodge Complaint</Nav.Link></div>
     </Nav>
