@@ -43,7 +43,7 @@ function SignUpPage() {
                     <Form.Label className="formBasic">Re-enter Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button variant="outline-light" type="submit">
+                <Button variant="outline-light" type="submit" id="chb">
                     Sign Up
   </Button>
             </Form>

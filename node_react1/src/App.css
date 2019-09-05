@@ -84,7 +84,7 @@ h2
 }
 .header{
   font-size: 2em;
-  color:white;
+  color:red;
 }
 .footer{
   font-size: 1em;
@@ -199,6 +199,7 @@ h2
 }
 #chb:hover
 {
+  color: white;
   background-color: red;
   text-decoration: none;
   font-weight: 600;
