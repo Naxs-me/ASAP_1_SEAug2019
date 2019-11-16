@@ -77,6 +77,8 @@ class SignUpPage extends Component {
             axios.post('http://localhost:4000/SignUp/add', newUser)
                 .then(res => {console.log(res.data);
                 if(res.status){
+                    localStorage.setItem("userName",newUser.name);
+                    localStorage.setItem("userEmail",newUser.email);
                     console.log("Tryng to redirect");
                     this.setState({
                         redirect: true

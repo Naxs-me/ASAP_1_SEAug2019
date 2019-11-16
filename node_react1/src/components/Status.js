@@ -5,7 +5,7 @@ import { Table } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom'
 import Footer from './Footer'
 function Status_table() {
-    if(localStorage.getItem("userData"))
+    if(localStorage.getItem("userEmail"))
         return (
             <center>
                 <Navigation></Navigation>

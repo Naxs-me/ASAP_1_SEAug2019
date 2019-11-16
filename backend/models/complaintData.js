@@ -29,6 +29,10 @@ let complaintData = new Schema({
     Longitude: {
         type: Number,
         required: true
+    },
+    TimeStamp: {
+        type: Date,
+        default: Date.now
     }
 })
 

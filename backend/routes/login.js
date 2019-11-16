@@ -20,7 +20,8 @@ loginRoutes.route('/add').post(function (req, res) {
         } else {
           res.header('Access-Control-Allow-Origin', '*');
           req.session.user = user;
-          var1=req.session;
+          console.log("test login");
+          console.log(req.session.user);
           return res.json({status : true,session: req.session});
           console.log("logged in."); 
         }
@@ -50,6 +51,7 @@ loginRoutes.route('/logout').get(function (req, res) {
   if(req.session)
   {
     console.log("logout");
+    console.log(req.session);
     req.session.destroy();
     console.log("happy"+req.session);
     var1=req.session;

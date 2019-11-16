@@ -28,7 +28,9 @@ class NavBar extends Component {
     console.log("submit");
     console.log(this.props.session);
     console.log("data is here");
-    localStorage.removeItem("userData");
+    //console.log(localStorage.getItem("userData").user);
+    localStorage.removeItem("userName");
+    localStorage.removeItem("userEmail");
 
 
     console.log(`Form submitted:`);
@@ -43,7 +45,7 @@ class NavBar extends Component {
       });}
 
   render() {
-    if(localStorage.getItem("userData"))
+    if(localStorage.getItem("userEmail"))
     {
       console.log("loggedin");
       console.log("IN NAVBAR : ",this.props.session);

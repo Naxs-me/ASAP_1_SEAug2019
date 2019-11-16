@@ -67,6 +67,8 @@ class Lodge extends Component {
         console.log(this.state.Latitude);
         console.log(this.state.Longitude);
         const newProblem = {
+            Name: localStorage.getItem("userName"),
+            Email: localStorage.getItem("userEmail"),
             Problem: this.state.Problem,
             Address: this.state.Address,
             Contact: this.state.Contact,
@@ -92,7 +94,7 @@ class Lodge extends Component {
     }
 
     render() {
-        if(localStorage.getItem("userData"))
+        if(localStorage.getItem("userEmail"))
             return (
                 <div>
                     <Navigation />

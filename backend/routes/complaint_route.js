@@ -10,10 +10,11 @@ process.env.SECRET_KEY = 'secret';
  
 complaintRoutes.route('/add').post(function(req, res) {
   console.log("hello");
+  console.log(req.session);
 
   var u = User({
-    Name : 'Nakshatra',
-    Email: 'naxs.me@gmail.com',
+    Name : req.body.Name,
+    Email: req.body.Email,
     Problem: req.body.Problem,
     Address: req.body.Address,
     Contact: req.body.Contact,

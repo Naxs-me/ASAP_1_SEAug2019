@@ -60,8 +60,9 @@ class LoginPage extends Component {
           console.log(this.props);
           console.log("res.data.session");
           console.log(res.data.session);
-          localStorage.setItem("userData",res.data.session.user.name);
-          console.log(toString(localStorage.getItem("userData")));
+          localStorage.setItem("userName",res.data.session.user.name);
+          localStorage.setItem("userEmail",res.data.session.user.email);
+          //console.log(toString(localStorage.getItem("userData")));
           this.props.addSession(res.data.session);
           console.log("Session : ",res.data.session);
           console.log("Tryng to redirect");
