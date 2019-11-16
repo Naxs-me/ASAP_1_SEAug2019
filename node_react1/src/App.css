@@ -115,7 +115,7 @@ h2
   background-color: black;
   border-radius:15px;
   width: 80%;
-  height: 400px;
+  height: 700px;
   overflow-y: scroll;
   scrollbar-width: 1em;
 }
@@ -211,4 +211,9 @@ h2
 .withtable th
 {
   color: red;
+}
+#check1
+{
+  padding-right: 2em;
+  color: white;
 }
