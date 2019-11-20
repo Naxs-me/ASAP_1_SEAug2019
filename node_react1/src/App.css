@@ -290,7 +290,7 @@ h2
   background-color: rgba(0,0,0, 1); 
   border-radius: 15px; 
   border: 2px ridge yellow;
-  box-shadow: 10px 10px 2000px 1000px rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 2000px 1000px rgba(0,0,0,0.15);
   padding: 10px;
   padding-bottom: 20px;
 }  
