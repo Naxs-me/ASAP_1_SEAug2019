@@ -16,10 +16,12 @@ complaintRoutes.route('/add').post(function(req, res) {
     Name : req.body.Name,
     Email: req.body.Email,
     Problem: req.body.Problem,
+    Problem_desc: req.body.Problem_desc,
     Address: req.body.Address,
     Contact: req.body.Contact,
     Latitude: req.body.Latitude,
-    Longitude: req.body.Longitude
+    Longitude: req.body.Longitude,
+    Type: req.body.Type
   });
   console.log(u);
   u.save()

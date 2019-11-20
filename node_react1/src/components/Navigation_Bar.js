@@ -64,7 +64,7 @@ class NavBar extends Component {
                     <div className="navtext"><Link to="/Status" id="che">View Status</Link></div>
                     <div className="navtext"><Link to="/Lodge" id="che">Lodge Complaint</Link></div>
                 </Nav>
-                <text id="check1">Welcome user</text>
+                <text id="check1">Welcome {`${localStorage.getItem("userName")}`}</text>
                 {/* <ButtonGroup className="mr-2" aria-label="Second group"> */}
                     <Button variant="outline-light" id="chb" type="submit" onClick={this.onSubmit}><Link to="/Login" id="ch">Logout</Link></Button>
                 {/* </ButtonGroup> */}

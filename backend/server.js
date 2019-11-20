@@ -60,10 +60,16 @@ app.get("/cookie", (req, res) => {
 var Users = require('./routes/user')
 var login = require('./routes/login')
 var complaints = require('./routes/complaint_route')
+var get_complaints = require('./routes/get_complaint')
+var get_status = require('./routes/get_status')
+var Like = require('./routes/Like')
 
 app.use('/SignUp', Users);
 app.use('/Login', login);
 app.use('/Lodge', complaints);
+app.use('/', get_complaints);
+app.use('/Status', get_status);
+app.use('/',Like);
 
 
 

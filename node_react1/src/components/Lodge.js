@@ -17,14 +17,18 @@ class Lodge extends Component {
         this.onSubmit = this.onSubmit.bind(this);
         this.showPosition = this.showPosition.bind(this);
         this.getLocation = this.getLocation.bind(this);
+        this.onProblem_descChange = this.onProblem_descChange.bind(this);
+        this.onTypeChange = this.onTypeChange.bind(this);
         this.state = {
             User_name: '',
             Email: '',
             Problem: '',
+            Problem_desc: '',
             Address: '',
             Contact: '',
             Latitude: 0.0,
-            Longitude: 0.0
+            Longitude: 0.0,
+            Type: 'Public'
         }
     }
     getLocation() {
@@ -42,10 +46,17 @@ class Lodge extends Component {
         console.log(this.state.Latitude);
         this.state.Longitude = position.coords.longitude;
         console.log(this.state.Longitude);
+        alert("Location taken succesfully");
       }
     onProblemChange(e) {
         this.setState({
             Problem: e.target.value
+        });
+    }
+
+    onProblem_descChange(e) {
+        this.setState({
+            Problem_desc: e.target.value
         });
     }
 
@@ -61,6 +72,12 @@ class Lodge extends Component {
         });
     }
 
+    onTypeChange(e) {
+        this.setState({
+            Type: e.target.value
+        });
+    }
+
     onSubmit(e) {
         e.preventDefault();
         console.log("here :: ");
@@ -70,14 +87,16 @@ class Lodge extends Component {
             Name: localStorage.getItem("userName"),
             Email: localStorage.getItem("userEmail"),
             Problem: this.state.Problem,
+            Problem_desc: this.state.Problem_desc,
             Address: this.state.Address,
             Contact: this.state.Contact,
             Latitude: this.state.Latitude,
-            Longitude: this.state.Longitude
+            Longitude: this.state.Longitude,
+            Type: this.state.Type
         };
         axios.post('http://localhost:4000/Lodge/add', newProblem)
             .then(res => console.log(res.data));
-        
+        alert("Complaint Lodged Succesfully");
         console.log(`Form submitted:`);
         console.log(`Problem: ${this.state.Problem}`);
         console.log(`Address: ${this.state.Address}`);
@@ -86,10 +105,12 @@ class Lodge extends Component {
         console.log(`Longitude: ${this.state.Longitude}`);
         this.setState({
             Problem: '',
+            Problem_desc: '',
             Address: '',
             Contact: '',
             Latitude: 0.0,
-            Longitude: 0.0
+            Longitude: 0.0,
+            Type: 'Public'
         })
     }
 
@@ -106,6 +127,10 @@ class Lodge extends Component {
                                 <Form.Label className="formBasic">Problem</Form.Label>
                                 <Form.Control type="text" placeholder="Problem" value = {this.state.Problem} onChange = {this.onProblemChange} required />
                             </Form.Group>
+                            <Form.Group controlId="formBasicName">
+                                <Form.Label className="formBasic" id = "increaseHeight">Problem Description</Form.Label>
+                                <Form.Control type="textarea" placeholder="Problem Description" value = {this.state.Problem_desc} onChange = {this.onProblem_descChange}  required />
+                            </Form.Group>
                             <Form.Group controlId="formBasicEmail">
                                 <Form.Label className="formBasic">Address</Form.Label>
                                 <Form.Control type="text" placeholder="Enter Address" value = {this.state.Address} onChange = {this.onAddressChange} required />
@@ -118,6 +143,15 @@ class Lodge extends Component {
                                 <Form.Label className="formBasic">Contact Number</Form.Label>
                                 <Form.Control type="number" placeholder="Contact Number" value = {this.state.Contact} onChange = {this.onContactChange} required />
                             </Form.Group>
+                            <p className="formBasic">Privacy Type : </p>
+                        <p className="formBasic1">
+                            <Form.Group controlId="formBasicGender">
+                                <Form.Label id="try">Private  </Form.Label>
+                                <input type="radio" required name="Type" value="Private" checked={this.state.Type === "Private"} onChange={this.onTypeChange} />
+                                <Form.Label id="try">Public  </Form.Label>
+                                <input type="radio" required name="Type" value="Public" checked={this.state.Type === "Public"} onChange={this.onTypeChange} />
+                            </Form.Group>
+                        </p>
                             <Button variant="outline-light" type="button" id="chb" onClick={this.getLocation}>
                                 Location
                             </Button>
