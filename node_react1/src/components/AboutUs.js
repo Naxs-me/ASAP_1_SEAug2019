@@ -16,7 +16,7 @@ function AboutUs(){
             </p>
             <br/>
             <p>
-                The platform has been designed such that it can be easily used by digitally and visually challenged people.
+                The platform has been designed to impove transparency and add convenience for lodging complaints.
             </p>
         </div>
         </center>

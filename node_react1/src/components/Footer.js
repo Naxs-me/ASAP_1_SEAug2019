@@ -10,7 +10,7 @@ var style = {
     position : "fixed",
     left: "0",
     bottom: "0",
-    height: "150px",
+    height: "14%",
     width: "100%",
     //padding:"3%"
 }
@@ -22,8 +22,7 @@ function Footer({ children }) {
                 <Link to="/" id="check">Home</Link>
                 <br/><Link to="/AboutUs" id="check">About Us</Link>
                 <br/><Link to="/ContactUs" id="check">Contact Us</Link>
-                <br/><Link to="/Login" id="check">Login</Link>
-                <br/><Link to="/SignUp" id="check">SignUp</Link>
+                <br/>
                 <center>Version 1.0</center>
             </div>
         </div>
