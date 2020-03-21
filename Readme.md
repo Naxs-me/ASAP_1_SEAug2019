@@ -4,7 +4,7 @@ GitHub repository link: https://github.com/Naxs-me/ASAP_1_SEAug2019.git
 
 step1)install the dependencies using npm install
 
-step2)install mongodb, mkdir -p data/db, //create a table in mongodb named "userData"
+step2)install mongodb, mkdir -p data/db
 
 step3)cd backend
 
