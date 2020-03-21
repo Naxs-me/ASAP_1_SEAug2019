@@ -105,9 +105,9 @@ class Tables extends Component {
             if (this.state.pageTable[i]) {
                 children.push(<td>
                     <div className="bigDiv">
-                        <div className="bigDiv1">
-                            <span className="userName">{`${this.state.pageTable[i]["Name"]}`}</span>
-                            <span className="timeStamp">{`${time}`}</span>
+                        <div className="row bigDiv1">
+                            <span className="userName col-lg-6">{`${this.state.pageTable[i]["Name"]}`}</span>
+                            <span className="timeStamp col-lg-6">{`${time}`}</span>
                         </div>
                         <div>
                             <span className="problem">{`${dist}`}</span>
